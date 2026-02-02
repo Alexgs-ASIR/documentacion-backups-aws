@@ -1,0 +1,90 @@
+site_name: Automatización de Backups Seguros con Python y AWS S3
+site_description: Guía completa para implementar automatización de backups seguros usando Python y Amazon S3
+site_author: Alejandro Gámez
+site_url: https://example.com/
+
+# Configuración del tema
+theme:
+  name: material
+  language: es
+  palette:
+    # Modo claro
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    # Modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+# Configuración de navegación
+nav:
+  - Inicio: index.md
+  - Introducción: intro.md
+  - Instalación: install.md
+  - Guía de Uso: usage.md
+  - Conclusiones: conclusions.md
+
+# Extensiones de Markdown
+markdown_extensions:
+  # Admonitions (Notas, Advertencias, etc.)
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  
+  # Resaltado de código
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  
+  # Mejoras de formato
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  
+  # Tablas y listas mejoradas
+  - tables
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  
+  # Metadata y TOC
+  - meta
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+# Plugins
+plugins:
+  - search:
+      lang: es
+
+# Información adicional
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/
+    - icon: fontawesome/brands/python
+      link: https://www.python.org/
+
+# Copyright
+copyright: Copyright &copy; 2026 Alejandro Gámez
